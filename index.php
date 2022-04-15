@@ -11,7 +11,7 @@
 
         // Requisição para o Google usando file get contents
         $url = urlencode($_POST['address']);
-        $str = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$url."&key=AIzaSyBdcUGncCgjl2-0EESNFdWXsoCA7WWijjc&sensor=false");
+        $str = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$url."&key="Usar sua chave do google API"&sensor=false");
 
 
         $endereco = json_decode($str);
